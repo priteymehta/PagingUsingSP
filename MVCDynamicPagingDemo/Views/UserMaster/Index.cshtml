@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Pritey.Framework.Entity.UserMaster>
+@{
+    ViewBag.Title = "Employee Information";
+}
+<div class="jumbotron">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Surname)</th>
+                <th>@Html.DisplayNameFor(model => model.Address)</th>
+                <th>@Html.DisplayNameFor(model => model.Telephone)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in listUser)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(model => item.Name)</td>
+                    <td>@Html.DisplayFor(model => item.Surname)</td>
+                    <td>@Html.DisplayFor(model => item.Address)</td>
+                    <td>@Html.DisplayFor(model => item.Telephone)</td>
+                </tr>
+            }
+            <tr>
+                <td>@Html.ActionLink("Previous", "Previous", null, new { @class = "btn btn-info" })</td>
+                <td>@ViewBag.PageNumber</td>
+                <td>@Html.ActionLink("Next", "Next", null, new { @class = "btn btn-info" })</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
