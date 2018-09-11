@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
-using ENT = CRM.Framework.Entity;
+using ENT = Pritey.Framework.Entity;
 
 /// <summary>
 /// Summary description for MySession
@@ -16,12 +16,12 @@ public class MySession
         Username = null;
         PasswordChange = null;
         UserFullname = null;
-        UserType = new CRM.Framework.Common.Enumration.UserType();
+        UserType = new Pritey.Framework.Common.Enumration.UserType();
         SearchParam = null;
         MessageResult = new FormResultEntity();
         //UserProfileAccessList = new List<WS.Entity.ProfileUserAccessLevel>();
         UserAccessLevelEntity = new UserAccessLevelEntity();
-        UserProfile = new CRM.Framework.Entity.UserProfile();
+        
         ExportVendor = new GridView();
         ExportCollection = new GridView();
         ExportVoucher = new GridView();
@@ -50,11 +50,11 @@ public class MySession
     public string PasswordChange { get; set; }
     public FormResultEntity MessageResult { get; set; }
     public string UserFullname { get; set; }
-    public CRM.Framework.Common.Enumration.UserType UserType { get; set; }
+    public Pritey.Framework.Common.Enumration.UserType UserType { get; set; }
     //public List<ENT.ProfileUserAccessLevel> UserProfileAccessList { get; set; }
     public UserAccessLevelEntity UserAccessLevelEntity { get; set; }
 
-    public ENT.UserProfile UserProfile { get; set; }
+   
     public GridView ExportVendor { get; set; }
     public GridView ExportCollection { get; set; }
     public GridView ExportVoucher { get; set; }

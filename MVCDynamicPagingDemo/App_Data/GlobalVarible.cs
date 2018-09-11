@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using ENT = CRM.Framework.Entity;
-using BAL = CRM.Framework.Logic;
+using ENT = Pritey.Framework.Entity;
+using BAL = Pritey.Framework.Logic;
 
 public static class GlobalVarible
 {

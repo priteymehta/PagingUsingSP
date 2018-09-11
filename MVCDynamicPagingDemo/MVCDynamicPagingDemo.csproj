@@ -166,7 +166,6 @@
     <Compile Include="App_Data\CommanMethods.cs" />
     <Compile Include="App_Data\CommonClass.cs" />
     <Compile Include="App_Data\ExtendedMethods.cs" />
-    <Compile Include="App_Data\GetEntityNames.cs" />
     <Compile Include="App_Data\GlobalVarible.cs" />
     <Compile Include="App_Data\MySession.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />

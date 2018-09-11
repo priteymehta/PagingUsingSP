@@ -80,51 +80,7 @@ public static class ExtendedMethods
         
     }
 
-    public static string GetUserFullName(this IPrincipal user)
-    {
-        try
-        {
-            string userid = user.Identity.GetUserId();
-            if(!string.IsNullOrEmpty(userid))
-            {
-                if (string.IsNullOrEmpty(MySession.Current.UserProfile.up_name))
-                {
-                    MySession.Current.UserProfile = (ENT.UserProfile)new BAL.UserProfile().UserProfile_Get(user.GetLogged_Userid());
-                    MySession.Current.UserFullname = MySession.Current.UserProfile.up_name;
-                    MySession.Current.UserType = (CRM.Framework.Common.Enumration.UserType)MySession.Current.UserProfile.up_usertype;
-                }
-                return MySession.Current.UserFullname + "@" + MySession.Current.UserType;
-            }
-            else
-            {
-                Guid usrid = new Guid(user.Identity.GetUserId());
-                if (string.IsNullOrEmpty(MySession.Current.UserProfile.up_name))
-                {
-                    MySession.Current.UserProfile = (ENT.UserProfile)new BAL.UserProfile().UserProfile_Get(user.GetLogged_Userid());
-                    MySession.Current.UserFullname = MySession.Current.UserProfile.up_name;
-                    MySession.Current.UserType = (CRM.Framework.Common.Enumration.UserType)MySession.Current.UserProfile.up_usertype;
-                }
-                return "Admin@";
-            }
-        }
-        catch (Exception ex)
-        {
-            return ex.Message;
-        }
-       
-        
-        
-    }
-
-    public static bool isInRoles(this IPrincipal user, params string[] Roles)
-    {
-        foreach (string str in Roles)
-        {
-            if (user.IsInRole(str)) { return true; }
-        }
-        return false;
-    }
-
+   
     public static string GetFormatedDate(this DateTime date)
     {
         return date.ToString("dd/MM/yyyy");
