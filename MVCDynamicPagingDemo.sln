@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDynamicPagingDemo", "MVCDynamicPagingDemo\MVCDynamicPagingDemo.csproj", "{358B4E8F-E072-4E31-A412-AB8A039563D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pritey.Framework.Common", "Pritey.Framework.Common\Pritey.Framework.Common.csproj", "{56E05D8D-0957-42BB-B208-C1A8125409D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pritey.Framework.Logic", "Pritey.Framework.Logic\Pritey.Framework.Logic.csproj", "{5AC39CA3-4621-499A-9B90-A173FF916147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pritey.Framework.Entity", "Pritey.Framework.Entity\Pritey.Framework.Entity.csproj", "{70713E5A-02C9-49E5-9550-2AFBFAFD536C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{358B4E8F-E072-4E31-A412-AB8A039563D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358B4E8F-E072-4E31-A412-AB8A039563D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358B4E8F-E072-4E31-A412-AB8A039563D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358B4E8F-E072-4E31-A412-AB8A039563D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E05D8D-0957-42BB-B208-C1A8125409D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E05D8D-0957-42BB-B208-C1A8125409D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E05D8D-0957-42BB-B208-C1A8125409D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E05D8D-0957-42BB-B208-C1A8125409D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC39CA3-4621-499A-9B90-A173FF916147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC39CA3-4621-499A-9B90-A173FF916147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC39CA3-4621-499A-9B90-A173FF916147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC39CA3-4621-499A-9B90-A173FF916147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70713E5A-02C9-49E5-9550-2AFBFAFD536C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70713E5A-02C9-49E5-9550-2AFBFAFD536C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70713E5A-02C9-49E5-9550-2AFBFAFD536C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70713E5A-02C9-49E5-9550-2AFBFAFD536C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
