@@ -1,0 +1,48 @@
+-- Use the below database design for this project 
+-- There are two procedures and one table to fetch the records.
+
+-- Create database 
+create database dbUser
+
+-- create table named as UserProfile
+create table UserProfile
+(
+  up_id int identity(1,1),
+  up_name nvarchar(50)
+)
+
+-- create first store procedures to fetch total numbers of records.
+
+CREATE procedure [dbo].[getTotalUsers]
+as 
+
+select COUNT(um_id) from dbo.UserProfile 
+
+
+--- create this second store procedure to get number of records.
+
+
+CREATE procedure [dbo].[GetUser]
+(
+    @startRowIndex int, 
+    @maximumRows int
+)
+AS 
+
+declare @firstInt int, @startRow int
+if (@startRowIndex <= (select COUNT(um_id) from dbo.UserProfile))
+begin
+    set ROWCOUNT @startRowIndex
+
+    select @firstInt = um_id from dbo.UserProfile order by um_id
+
+    set ROWCOUNT @maximumRows
+
+    select um_id, um_name
+    from dbo.UserProfile where um_id >= @firstInt order by um_id
+
+    set ROWCOUNT 0
+end
+
+
+
