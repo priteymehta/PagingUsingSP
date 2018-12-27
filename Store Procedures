@@ -20,6 +20,7 @@ select COUNT(um_id) from dbo.UserProfile
 
 
 --- create this second store procedure to get number of records.
+--- this procedure is used to fetch specific records from the table
 
 
 CREATE procedure [dbo].[GetUser]
